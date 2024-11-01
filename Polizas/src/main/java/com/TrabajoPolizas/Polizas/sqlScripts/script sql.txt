@@ -1,0 +1,16 @@
+-------------------------------------------------------------Clientes----------------------------------------------
+INSERT INTO clientes (nombre, apellido, email, nacionalidad, dni, telefono,fecha_nacimiento, de_baja) VALUES
+('Juan', 'Pérez', 'juan.perez@example.com', 'Argentina', 'A1234567', '+54 9 11 1234-5678', '1980-01-15 00:00:00', false),
+('María', 'González', 'maria.gonzalez@example.com', 'Argentina', 'A2345678', '+54 9 11 2345-6789', '1985-05-20 00:00:00', false),
+('Carlos', 'López', 'carlos.lopez@example.com', 'Argentina', 'A3456789', '+54 9 11 3456-7890', '1990-10-30 00:00:00', true),
+('Ana', 'Martínez', 'ana.martinez@example.com', 'Argentina', 'A4567890', '+54 9 11 4567-8901', '1975-07-25 00:00:00', false),
+('Luis', 'Fernández', 'luis.fernandez@example.com', 'Argentina', 'A5678901', '+54 9 11 5678-9012', '1988-03-10 00:00:00', true);
+-------------------------------------------------------Tipo seguro-----------------------------------------------------------------------
+INSERT INTO tipos_seguros (nombre, Cobertura, de_baja) VALUES
+('Cobertura Básica', 'Cobertura contra daños menores', false),
+('Cobertura Completa', 'Cobertura total contra todo riesgo', false),
+('Cobertura de Robo', 'Cobertura contra robo y hurto', true),
+('Cobertura de Incendio', 'Cobertura contra incendios', false),
+('Cobertura de Terceros', 'Cobertura contra daños a terceros', true);
+--------------------------------------------------User Hasheado---------------------------------------------
+INSERT INTO `polizas`.`usuarios` (`id`, `activo`, `password`, `roles`, `username`) VALUES (1, 1, ''$2a$10$mBU5TgYfPS6wrlFWTMp6c.auQxMDI5bRjl7M9lZSAyBxGnNcBgy96'', 'ADMIN', 'guido')
